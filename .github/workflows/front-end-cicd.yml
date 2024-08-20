@@ -17,11 +17,7 @@ jobs:
       with:
         args: --acl public-read --follow-symlinks --delete
       env:
-<<<<<<< HEAD
         AWS_S3_BUCKET: ari-cloudresume.com
-=======
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
->>>>>>> 35d7349b9600aa5d77a17a90c7d0ba1b53ba97f7
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'us-east-1'   # optional: defaults to us-east-1
